@@ -720,7 +720,9 @@ main() {
         log_info "Found ${#DETECTED_SERVICES[@]} supported services running:"
         genacquisition
         cat "${TMP_ACQUIS_FILE}"
-        rm "${TMP_ACQUIS_FILE}"
+        if ! skip_tmp_acquis; then
+            rm "${TMP_ACQUIS_FILE}"
+        fi
         return
     fi
 
