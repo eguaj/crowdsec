@@ -229,7 +229,7 @@ cscli dashboard setup -l 0.0.0.0 -p 443 --password <password>
 	cmdDashboard.AddCommand(cmdDashStop)
 
 	var cmdDashShowPassword = &cobra.Command{Use: "show-password",
-		Short:             "displays password of metabase.",
+		Short:             "Displays password of metabase.",
 		Args:              cobra.ExactArgs(0),
 		DisableAutoGenTag: true,
 		Run: func(cmd *cobra.Command, args []string) {
@@ -244,8 +244,8 @@ cscli dashboard setup -l 0.0.0.0 -p 443 --password <password>
 
 	var cmdDashRemove = &cobra.Command{
 		Use:               "remove",
-		Short:             "removes the metabase container.",
-		Long:              `removes the metabase container using docker.`,
+		Short:             "Removes the metabase container.",
+		Long:              `Removes the metabase container using docker.`,
 		Args:              cobra.ExactArgs(0),
 		DisableAutoGenTag: true,
 		Example: `
