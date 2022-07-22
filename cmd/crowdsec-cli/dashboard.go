@@ -196,8 +196,8 @@ cscli dashboard setup -l 0.0.0.0 -p 443 --password <password>
 
 	var cmdDashStart = &cobra.Command{
 		Use:               "start",
-		Short:             "Start the metabase container.",
-		Long:              `Stats the metabase container using docker.`,
+		Short:             "Starts the metabase container.",
+		Long:              `Starts the metabase container using docker.`,
 		Args:              cobra.ExactArgs(0),
 		DisableAutoGenTag: true,
 		Run: func(cmd *cobra.Command, args []string) {
